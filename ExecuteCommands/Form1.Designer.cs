@@ -99,6 +99,7 @@ namespace ExecuteCommands
             this.txtInterval.Name = "txtInterval";
             this.txtInterval.Size = new System.Drawing.Size(57, 23);
             this.txtInterval.TabIndex = 5;
+            this.txtInterval.Text = "60";
             // 
             // timer1
             // 
