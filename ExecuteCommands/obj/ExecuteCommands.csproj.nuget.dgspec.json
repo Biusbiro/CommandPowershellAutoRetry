@@ -43,6 +43,18 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows7.0",
           "dependencies": {
+            "IronXL.Excel": {
+              "target": "Package",
+              "version": "[2021.11.0, )"
+            },
+            "Microsoft.Office.Excel": {
+              "target": "Package",
+              "version": "[14.0.4760.1000, )"
+            },
+            "Microsoft.Office.Interop.Excel": {
+              "target": "Package",
+              "version": "[15.0.4795.1000, )"
+            },
             "Microsoft.PowerShell.SDK": {
               "target": "Package",
               "version": "[7.2.0, )"

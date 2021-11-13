@@ -6,6 +6,14 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
+      "IronXL.Excel/2021.11.0": {
+        "runtime": {
+          "lib/netstandard2.0/IronXL.dll": {
+            "assemblyVersion": "2021.11.0.0",
+            "fileVersion": "2021.11.0.0"
+          }
+        }
+      },
       "Markdig.Signed/0.22.0": {
         "runtime": {
           "lib/netcoreapp3.1/Markdig.Signed.dll": {
@@ -474,6 +482,22 @@
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {},
+      "Microsoft.Office.Excel/14.0.4760.1000": {
+        "runtime": {
+          "lib/net20/Office.dll": {
+            "assemblyVersion": "14.0.0.0",
+            "fileVersion": "14.0.4760.1000"
+          }
+        }
+      },
+      "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.0.4795.1000"
+          }
+        }
+      },
       "Microsoft.PowerShell.Commands.Diagnostics/7.2.0": {
         "dependencies": {
           "System.Management.Automation": "7.2.0"
@@ -2069,6 +2093,13 @@
     }
   },
   "libraries": {
+    "IronXL.Excel/2021.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ihfAU9ONIBR651eSW5hjSC515Aawm7WzjXDthtm2cMwcCj0R1tyz7IEB9RNl9p5yrpRuDkGpdN5toFmjx/c/2g==",
+      "path": "ironxl.excel/2021.11.0",
+      "hashPath": "ironxl.excel.2021.11.0.nupkg.sha512"
+    },
     "Markdig.Signed/0.22.0": {
       "type": "package",
       "serviceable": true,
@@ -2173,6 +2204,20 @@
       "sha512": "sha512-SaToCvvsGMxTgtLv/BrFQ5IFMPRE1zpWbnqbpwykJa8W5XiX82CXI6K2o7yf5xS7EP6t/JzFLV0SIDuWpvBZVw==",
       "path": "microsoft.netcore.windows.apisets/1.0.1",
       "hashPath": "microsoft.netcore.windows.apisets.1.0.1.nupkg.sha512"
+    },
+    "Microsoft.Office.Excel/14.0.4760.1000": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A6pxGABJUyirV9w9uqMQfkZFTREIltkqAI+KWG8e5JOZI6kjUTUz+861Yh0mrEW/ZrVzuwBhXdKd4V7rsfC9fg==",
+      "path": "microsoft.office.excel/14.0.4760.1000",
+      "hashPath": "microsoft.office.excel.14.0.4760.1000.nupkg.sha512"
+    },
+    "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DfceS96ustwfL8EOJNNRtpk6b0RylhjNpgeeemuvi9X4GYks2UTeAimjSrdFEfuqRo5ibZ4Sd0gJIeDr9gMa6Q==",
+      "path": "microsoft.office.interop.excel/15.0.4795.1000",
+      "hashPath": "microsoft.office.interop.excel.15.0.4795.1000.nupkg.sha512"
     },
     "Microsoft.PowerShell.Commands.Diagnostics/7.2.0": {
       "type": "package",

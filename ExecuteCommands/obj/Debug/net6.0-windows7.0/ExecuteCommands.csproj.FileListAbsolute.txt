@@ -103,7 +103,6 @@ F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\bin\Debug\net6.0-wind
 F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\bin\Debug\net6.0-windows7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\bin\Debug\net6.0-windows7.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
 F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\bin\Debug\net6.0-windows7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\obj\Debug\net6.0-windows7.0\ExecuteCommands.csproj.AssemblyReference.cache
 F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\obj\Debug\net6.0-windows7.0\ExecuteCommands.Form1.resources
 F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\obj\Debug\net6.0-windows7.0\ExecuteCommands.csproj.GenerateResource.cache
 F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\obj\Debug\net6.0-windows7.0\ExecuteCommands.GeneratedMSBuildEditorConfig.editorconfig
@@ -424,3 +423,7 @@ F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\bin\Debug\net6.0-wind
 F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\bin\Debug\net6.0-windows7.0\runtimes\win\lib\net6.0\System.Speech.dll
 F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\bin\Debug\net6.0-windows7.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\bin\Debug\net6.0-windows7.0\runtimes\win\lib\net6.0\System.Threading.AccessControl.dll
+F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\bin\Debug\net6.0-windows7.0\Microsoft.Office.Interop.Excel.dll
+F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\obj\Debug\net6.0-windows7.0\ExecuteCommands.csproj.AssemblyReference.cache
+F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\bin\Debug\net6.0-windows7.0\Office.dll
+F:\REPOSITORIOS\PARTICULAR\ExecuteCommands\ExecuteCommands\bin\Debug\net6.0-windows7.0\IronXL.dll

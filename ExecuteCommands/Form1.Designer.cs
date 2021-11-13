@@ -38,6 +38,10 @@ namespace ExecuteCommands
             this.label2 = new System.Windows.Forms.Label();
             this.txtInterval = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.dialog = new System.Windows.Forms.SaveFileDialog();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.grdResults)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +76,7 @@ namespace ExecuteCommands
             // 
             this.txtCommand.Location = new System.Drawing.Point(75, 521);
             this.txtCommand.Name = "txtCommand";
-            this.txtCommand.Size = new System.Drawing.Size(618, 23);
+            this.txtCommand.Size = new System.Drawing.Size(614, 23);
             this.txtCommand.TabIndex = 2;
             // 
             // label1
@@ -107,11 +111,34 @@ namespace ExecuteCommands
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(138, 547);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Export";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(212, 547);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(477, 23);
+            this.textBox1.TabIndex = 7;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 586);
+            this.ClientSize = new System.Drawing.Size(777, 575);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtInterval);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -136,6 +163,10 @@ namespace ExecuteCommands
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtInterval;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.SaveFileDialog dialog;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

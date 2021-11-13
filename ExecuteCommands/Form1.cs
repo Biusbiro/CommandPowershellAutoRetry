@@ -11,6 +11,9 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System;
+using Excel = Microsoft.Office.Interop.Excel;
+using IronXL;
 
 namespace ExecuteCommands
 {
@@ -52,6 +55,32 @@ namespace ExecuteCommands
             foreach (PSObject obj in results)
                 stringBuilder.Append(obj.ToString());
             return stringBuilder.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var now = DateTime.Now;
+            var formatedDate = now.Year + "-" + now.Month + "-" + now.Day;
+            var nameFile = txtCommand.Text.Length > 20 ? txtCommand.Text.Substring(0, 19) : txtCommand.Text;
+
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            saveFileDialog1.FilterIndex = 2;
+            saveFileDialog1.RestoreDirectory = true;
+            saveFileDialog1.FileName = nameFile + " " + formatedDate + ".xls";
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                WorkBook workbook = WorkBook.Create(ExcelFileFormat.XLSX);
+                var sheet = workbook.CreateWorkSheet("results");
+
+                foreach (DataGridViewRow row in grdResults.Rows)
+                {
+                    sheet["A" + row.Index + 1].Value = row?.Cells[0]?.Value;
+                }
+
+                workbook.SaveAs(saveFileDialog1.FileName);
+            }
         }
     }
 }

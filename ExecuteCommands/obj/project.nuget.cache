@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AIYegPiPdR6UpZjGT8X3Y8/r8fA6jUwo0D9iuE7306eAwK0APKYLcITGhCbnrXYIje2u5wZBma7nAkd5WFReyQ==",
+  "dgSpecHash": "hJtS9qfnH1RvGwiKnAlZ0QamuFAXtJ5nuoxzZ+TadI8Q7PC6zD87YU2L527mz5fGb2OhfNFV0Vy9Du+3NmNgig==",
   "success": true,
   "projectFilePath": "F:\\REPOSITORIOS\\PARTICULAR\\ExecuteCommands\\ExecuteCommands\\ExecuteCommands.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Biu\\.nuget\\packages\\ironxl.excel\\2021.11.0\\ironxl.excel.2021.11.0.nupkg.sha512",
     "C:\\Users\\Biu\\.nuget\\packages\\markdig.signed\\0.22.0\\markdig.signed.0.22.0.nupkg.sha512",
     "C:\\Users\\Biu\\.nuget\\packages\\microsoft.applicationinsights\\2.18.0\\microsoft.applicationinsights.2.18.0.nupkg.sha512",
     "C:\\Users\\Biu\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
@@ -19,6 +20,8 @@
     "C:\\Users\\Biu\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Biu\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Biu\\.nuget\\packages\\microsoft.netcore.windows.apisets\\1.0.1\\microsoft.netcore.windows.apisets.1.0.1.nupkg.sha512",
+    "C:\\Users\\Biu\\.nuget\\packages\\microsoft.office.excel\\14.0.4760.1000\\microsoft.office.excel.14.0.4760.1000.nupkg.sha512",
+    "C:\\Users\\Biu\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1000\\microsoft.office.interop.excel.15.0.4795.1000.nupkg.sha512",
     "C:\\Users\\Biu\\.nuget\\packages\\microsoft.powershell.commands.diagnostics\\7.2.0\\microsoft.powershell.commands.diagnostics.7.2.0.nupkg.sha512",
     "C:\\Users\\Biu\\.nuget\\packages\\microsoft.powershell.commands.management\\7.2.0\\microsoft.powershell.commands.management.7.2.0.nupkg.sha512",
     "C:\\Users\\Biu\\.nuget\\packages\\microsoft.powershell.commands.utility\\7.2.0\\microsoft.powershell.commands.utility.7.2.0.nupkg.sha512",
@@ -120,5 +123,26 @@
     "C:\\Users\\Biu\\.nuget\\packages\\system.web.services.description\\4.9.0\\system.web.services.description.4.9.0.nupkg.sha512",
     "C:\\Users\\Biu\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Office.Excel 14.0.4760.1000' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Office.Excel",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Office.Interop.Excel 15.0.4795.1000' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Office.Interop.Excel",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

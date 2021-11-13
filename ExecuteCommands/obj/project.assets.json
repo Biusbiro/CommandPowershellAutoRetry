@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
+      "IronXL.Excel/2021.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/IronXL.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/IronXL.dll": {}
+        }
+      },
       "Markdig.Signed/0.22.0": {
         "type": "package",
         "compile": {
@@ -441,6 +450,24 @@
       },
       "Microsoft.NETCore.Windows.ApiSets/1.0.1": {
         "type": "package"
+      },
+      "Microsoft.Office.Excel/14.0.4760.1000": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Office.dll": {}
+        },
+        "runtime": {
+          "lib/net20/Office.dll": {}
+        }
+      },
+      "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
+        "type": "package",
+        "compile": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        },
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        }
       },
       "Microsoft.PowerShell.Commands.Diagnostics/7.2.0": {
         "type": "package",
@@ -3251,6 +3278,24 @@
     }
   },
   "libraries": {
+    "IronXL.Excel/2021.11.0": {
+      "sha512": "ihfAU9ONIBR651eSW5hjSC515Aawm7WzjXDthtm2cMwcCj0R1tyz7IEB9RNl9p5yrpRuDkGpdN5toFmjx/c/2g==",
+      "type": "package",
+      "path": "ironxl.excel/2021.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "EULA.txt",
+        "ironxl.excel.2021.11.0.nupkg.sha512",
+        "ironxl.excel.nuspec",
+        "lib/net45/IronXL.dll",
+        "lib/net45/IronXL.xml",
+        "lib/netstandard2.0/IronXL.dll",
+        "lib/netstandard2.0/IronXL.xml",
+        "readme-setup.txt",
+        "readme.txt"
+      ]
+    },
     "Markdig.Signed/0.22.0": {
       "sha512": "7x3FqS3wk8DXyQLuflD47tBs6+ly6k4VtoDCzlDWfy7XHVsBIi7eGYEM15sPAcwSCQjOksNWE8U5r2v0Sk5FzQ==",
       "type": "package",
@@ -3757,6 +3802,30 @@
         "microsoft.netcore.windows.apisets.1.0.1.nupkg.sha512",
         "microsoft.netcore.windows.apisets.nuspec",
         "runtime.json"
+      ]
+    },
+    "Microsoft.Office.Excel/14.0.4760.1000": {
+      "sha512": "A6pxGABJUyirV9w9uqMQfkZFTREIltkqAI+KWG8e5JOZI6kjUTUz+861Yh0mrEW/ZrVzuwBhXdKd4V7rsfC9fg==",
+      "type": "package",
+      "path": "microsoft.office.excel/14.0.4760.1000",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Office.dll",
+        "microsoft.office.excel.14.0.4760.1000.nupkg.sha512",
+        "microsoft.office.excel.nuspec"
+      ]
+    },
+    "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
+      "sha512": "DfceS96ustwfL8EOJNNRtpk6b0RylhjNpgeeemuvi9X4GYks2UTeAimjSrdFEfuqRo5ibZ4Sd0gJIeDr9gMa6Q==",
+      "type": "package",
+      "path": "microsoft.office.interop.excel/15.0.4795.1000",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Microsoft.Office.Interop.Excel.dll",
+        "microsoft.office.interop.excel.15.0.4795.1000.nupkg.sha512",
+        "microsoft.office.interop.excel.nuspec"
       ]
     },
     "Microsoft.PowerShell.Commands.Diagnostics/7.2.0": {
@@ -7655,6 +7724,9 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "IronXL.Excel >= 2021.11.0",
+      "Microsoft.Office.Excel >= 14.0.4760.1000",
+      "Microsoft.Office.Interop.Excel >= 15.0.4795.1000",
       "Microsoft.PowerShell.SDK >= 7.2.0",
       "System.Management.Automation >= 7.2.0"
     ]
@@ -7702,6 +7774,18 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows7.0",
         "dependencies": {
+          "IronXL.Excel": {
+            "target": "Package",
+            "version": "[2021.11.0, )"
+          },
+          "Microsoft.Office.Excel": {
+            "target": "Package",
+            "version": "[14.0.4760.1000, )"
+          },
+          "Microsoft.Office.Interop.Excel": {
+            "target": "Package",
+            "version": "[15.0.4795.1000, )"
+          },
           "Microsoft.PowerShell.SDK": {
             "target": "Package",
             "version": "[7.2.0, )"
@@ -7732,5 +7816,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.7.21379.14\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Office.Excel 14.0.4760.1000' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Office.Excel",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.Office.Interop.Excel 15.0.4795.1000' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.Office.Interop.Excel",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }
